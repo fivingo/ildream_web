@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>CSS 선택자</title>
+  <style>
+   b, i { /* 태그 선택자 */
+	font-family: '궁서';
+	color: blue;
+	font-size: 25px;
+   }
+   .t1 { /* 클래스 선택자 */
+	font-family: '궁서';
+	color: red;
+	font-size: 10px;
+	font-weight:bold;
+	background-color:pink;
+   }
+   .t2 {
+	font-family: '궁서';
+	font-size: 10px;
+	font-weight: bold;
+   }
+   /* 추가로 네임 선택자 */
+  </style>
+ </head>
+ <body>
+  <b>스타일 적용 텍스트</b><br>
+  <i>스타일 적용 텍스트</i><br>
+  <u>스타일 적용 텍스트</u><br>
+  <s>스타일 적용 텍스트</s><br>
+  <div class="t1">스타일 적용 텍스트</div>
+  <div class="t2">스타일 적용 텍스트</div>
+  <span class="t1">스타일 적용 텍스트</span>
+  <span class="t2">스타일 적용 텍스트</span>
+  <hr>
+  <table border="1">
+   <tr>
+	<th class="t1">이름</th>
+	<td class="t2">홍길동</td>
+   </tr>
+   <tr>
+    <th class="t1">나이</th>
+	<td class="t2">20</td>
+   </tr>
+   <tr>
+    <th class="t1">전화번호</th>
+	<td class="t2">010-1234-1234</td>
+   </tr>
+  </table>
+ </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>CSS Internal</title>
+  <style>
+   /* CSS Internal 방식: 내부 스타일 시트 */
+   /* id 선택자: #아이디 */
+   #layer1 {
+    position: absolute;	/* 공간 독립화 */
+	left: 100px;
+	top: 100px;
+    color: blue;
+	font-size: 20px;
+	font-family: '궁서';
+	font-weight: bold;
+   }
+  </style>
+ </head>
+ <body>
+  <div id="layer1">자바 웹 개발자 과정</div>
+  <!-- Inline 스타일 -->
+  <div id="layer2" style="font-size: 20px; font-weight: bold;
+  font-family: '궁서'; color: red; position: absolute; left: 105px;
+  top: 105px">자바 웹 개발자 과정</div>
+ </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>JavaScript 예시2</title>
+  <script>
+   function score() {
+	kor = parseInt(document.form.kor.value);
+	eng = parseInt(document.form.eng.value);
+	math = parseInt(document.form.math.value);
+	total = kor + eng + math;
+	average = total / 3;
+
+	switch (parseInt(average / 10)) {
+	 case 10:
+	 case 9:
+	  grade = 'A'
+	  break;
+	 case 8:
+	  grade = 'B'
+	  break;
+	 case 7:
+ 	  grade = 'C'
+ 	  break;
+	 case 6:
+	  grade = 'D'
+	  break;
+	 default:
+	  grade = 'F'
+	}
+
+	if (kor < 40 || eng < 40 || math < 40) {
+	 result = '과락입니다.'
+	} else if (average < 60) {
+	 result = '불합격입니다.'
+	} else {
+	 result = '합격입니다.'
+	}
+	
+	// average.toFixed(i): 소수점 i번째까지 표시
+	window.alert('시험결과\n총점: ' + total + '\n평균: ' + average.toFixed(2)
+	+ '\n등급: ' + grade + '\n결과: ' + result);
+   }
+  </script>
+ </head>
+ <body>
+  <table border="1">
+  <form name="form">
+   <tr>
+    <th colspan="2">시험결과</th>
+   </tr>
+   <tr>
+    <td>국어</td>
+    <td><input type="text" name="kor"></td>
+   </tr>
+   <tr>
+    <td>영어</td>
+    <td><input type="text" name="eng"></td>
+   </tr>
+   <tr>
+    <td>수학</td>
+    <td><input type="text" name="math"></td>
+   </tr>
+   <tr>
+    <td colspan="2" align="center">
+	 <input type="button" value="조회" onclick="score();">
+	 <input type="reset" value="다시">
+	</td>
+   </tr>
+  </form>
+  </table>
+ </body>
+</html>

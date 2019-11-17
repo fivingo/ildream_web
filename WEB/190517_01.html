@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>폼 (입력태그) 속성</title>
+ </head>
+ <body>
+  <h1>폼 입력태그 테스트</h1>
+  <!-- <form>: 사용자 입력(컨트롤) 양식 지정 -->
+  <!-- action: 전송목적지 지정, method: 전송방식 지정 -->
+  <form name="fm" action="http://www.naver.com" method="host">
+   <fieldset> <!-- <fieldset>: form내에 관련 컨트롤을 하나로 묶음-->
+    <legend>필수입력</legend> <!-- <legend>: fieldset의 제목-->
+	<!-- <label>: 클릭하면 연결된 양식에 입력할 수 있도록함 -->
+	<!-- text: 한 줄 입력 상자 생성 -->
+    <label>
+	 아이디: <input type="text" name="userid" size="10" maxlength="6" value="hello">
+	</label><br>
+	<!-- for: label과 관련된 컨트롤 지정 -->
+	<!-- password: 입력값이 안보임 - text와 속성사용 같음 -->
+    <label for="pwd">비밀번호: </label>
+	<input type="password" name="userpwd" id="pwd" size="10"><br>
+   </fieldset>
+   <!-- radio: 라디오버튼 생성 - 이름같게 지정시 하나만 선택가능, checked 기본선택항목 -->
+   성별: <input type="radio" name="se" value="남자">남자
+   <input type="radio" name="se" value="여자" checked>여자
+   <input type="radio" name="se" value="트랜스">트랜스<BR>
+   <!-- checkbox: 체크박스 생성 - 여러개 선택가능 -->
+   취미: <input type="checkbox" name="ch" value="공부">공부
+   <input type="checkbox" name="ch" value="독서">독서
+   <input type="checkbox" name="ch" value="운동">운동
+   <input type="checkbox" name="ch" value="연애">연애
+   <input type="checkbox" name="ch" value="게임">게임<br>  
+   메일: <input type="text" name="useremail">@
+   <!-- <select>: 목록상자 생성 - size 리스트개수, multiple 중복선택가능 -->
+   <select name="domain" size="3" multiple>
+    <!-- <option>: 목록상자에서 선택값 생성 - selected 기본선택항목 -->
+    <option value="naver.com">naver.com</option>
+    <option value="daum.net">daum.net</option>
+    <option value="gmail.com">gmail.com</option>
+    <option value="yahoo.com">yahoo.com</option>
+    <option value="직접입력">직접입력</option>
+   </select><br>
+   자기소개<br>
+   <!-- <textarea>: 여러줄 입력 상자 - 초기문자열 입력가능, readonly 읽기전용 -->
+   <textarea name="pr" cols="30" rows="5" readonly>Hello</textarea><br>
+   <!-- <file>: 파일 업로드 양식 (왼쪽 텍스트상자, 오른쪽 찾아보기) 파일선택시 절대경로 출력-->
+   사진: <input type="file" name="photo"><br>
+   <!-- submit: 양식제출버튼 - 작성된 <form>태그 이용  -->
+   <input type="submit" value="전달하기">
+   <!-- reset: 초기화버튼 - 입력된 양식들 초기화 -->
+   <input type="reset" value="초기화하기">
+   <!-- button: 일반버튼 - 특정 기능 삽입 가능 -->
+   <input type="button" value="더미버튼">
+  </form>
+ </body>
+</html>

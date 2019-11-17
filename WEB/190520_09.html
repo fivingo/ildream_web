@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>JavaScript - 입력값 회수</title>
+  <script>
+   function show() {
+	// 1. 사용자가 입력한값 회수: name으로 자바처럼 접근
+	var mon = document.fm.month.value;
+	mon = parseInt(mon);
+
+	// 2. 해당달의 일수구하기
+	switch (mon) {
+	 case 1:
+	 case 3:
+	 case 5:
+	 case 7:
+	 case 8:
+	 case 10:
+	 case 12:
+	  days = 31;
+	  break;
+	 case 4:
+	 case 6:
+	 case 9:
+	 case 11:
+	  days = 30;	// 함수에 종속된 지역변수
+	  break;
+	 case 2:
+	  days= 28;
+	  break;
+	 dafult:
+	  days = '잘못된 달 입력';
+	 }
+	 window.alert('사용자가 입력한 달: ' + mon + '\n해당달의 일수: ' + days);
+   }
+  </script>
+ </head>
+ <body>
+  <form name="fm">
+   <h1>달 일수 확인하기</h1>
+   달입력: <input type="text" name="month">
+   <input type="button" value="일수확인" onclick="show();">
+  </form>
+ </body>
+</html>

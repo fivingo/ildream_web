@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>CSS 속성 예시</title>
+  <style>
+   h1 {
+	text-align: center;
+   }
+   table {
+	border-top: 3px double red;
+	border-bottom: 3px double red;
+	border-spacing: 0px;
+	width: 500px;
+	height: 100px;
+	margin: 0px auto; /* 양쪽 margin 자동부여 (중앙정렬) */
+   }
+   .menu {
+	background-color: violet;
+	font-family: '돋움";
+	font-size: 12px;
+	width: 100px;
+	height: 20px;
+	padding: 10px;
+	border-right: 1px dotted red;
+	border-bottom: 1px dotted red;
+   }
+   .td {
+	font-family: '돋움";
+	font-size: 12px;
+    border-bottom: 1px dotted red;
+   }
+   .text {
+    border: 2px solid blue;
+	background-color: pink;
+	color: red;
+	margin: 10px;
+   }
+  </style>
+ </head>
+ <body>
+  <h1>회 원 가 입</h1>
+  <table align="center">
+   <tr>
+    <td class="menu">*아이디</td>
+    <td class="td"> <input class="text" type="text" name="userId"></td>
+   </tr>
+   <tr>
+    <td class="menu">*비밀번호</td>
+    <td class="td"><input class="text" type="password" name="userPw"></td>
+   </tr>
+   <tr>
+    <td class="menu">*연락처</td>
+    <td class="td"><input class="text" type="text" name="userTel"></td>
+   </tr>
+  </table>
+ </body>
+</html>

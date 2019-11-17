@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+  <!-- 테이블 태그 (블록태그) -->
+  <!--
+  테이블 태그의 속성
+  colspan: 가로줄 병합
+  rowspan: 세로줄 병합
+  width/height: 넓이와 높이 설정
+  border: 테이블 경계선 설정
+  cellpadding: 셀 여백 설정
+  cellspacing: 셀 간격 설정
+  align: 좌 중 우 정렬
+  valign: 상 중 하 정렬
+  background: 배경 설정
+  -->
+  <table border="2" width="300" height="300" cellspacing="0" cellpadding="10"
+  align="center" background="image.png" >
+   <!-- 행 -->
+   <tr bgcolor="pink" align="right" valign="top">
+    <!-- 열 -->
+    <td colspan="2">data01</td>
+    <td>data03</td>
+   </tr>
+   <tr>
+    <td>data04</td>
+    <td>data05</td>
+    <td>data06</td>
+  </table>
+  <table border="2" width="300" height="300" cellspacing="0" cellpadding="10"
+  align="center" background="image.png" >
+   <tr bgcolor="pink" align="right" valign="top">
+    <td rowspan="2">data01</td>
+    <td>data02</td>
+    <td>data03</td>
+   </tr>
+   <hr>
+   <tr>
+    <td>data05</td>
+    <td>data06</td>
+  </table>
+ </body>
+</html>

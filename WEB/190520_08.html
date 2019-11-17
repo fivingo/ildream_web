@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>JavaScript - 윈도우 경고창</title>
+  <script>
+   // 윈도우 제공 경고창 3가지
+   function show1() {
+    window.alert('기본적인 경고창');
+   }
+   function show2() {	// 결과값 리턴 (t/f)
+    var result = window.confirm('진짜 삭제하십니까?');
+	if (result) {
+	 window.alert('삭제완료');
+	} else {
+	 window.alert('그램마');
+	}
+   }
+   function show3() {	// 매개값 2가지, 입력값 리턴
+    var result = window.prompt('이름을 입력해주세요', '여기에 입력');
+	window.alert(result);	// 취소시 null 리턴
+   }
+  </script>
+ </head>
+ <body>
+  <input type="button" value="경고창1" onclick="show1();">
+  <input type="button" value="경고창2" onclick="show2();">
+  <input type="button" value="경고창3" onclick="show3();">
+ </body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>폼 속성 예시 - 회원가입</title>
+ </head>
+ <body>
+  <form>
+   <table border="0" bordercolor="white" cellspacing="0" cellpadding="2" width="500" height="400">
+    <tr>
+	 <th colspan="2" height="30" align="center" bgcolor="#33cc00">회원 가입</th>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">회원ID</td>
+	 <td>
+	  <input type="text" size="8" maxlength="10" name="userID">
+	  영문/숫자 3-10, 한글 2-8자
+	 </td>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">비밀번호</td>
+	 <td>
+	  <input type="password" size="8" maxlength="15" name="userPW">
+	  영문/숫자 조합으로 10-15자
+	 </td>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">비밀번호 확인</td>
+	 <td>
+	  <input type="password" size="8" maxlength="15" name="userPWrepeat">
+	  다시 한번 입력하세요.
+	 </td>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">이름</td>
+	 <td><input type="text" size="4" maxlength="5" name="userName"></td>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">성별</td>
+	 <td>
+	  <input type="radio" name="sex">남
+	  <input type="radio" name="sex">여
+	 </td>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">주민번호</td>
+	 <td>
+	  <input type="text" size="4" maxlength="6" name="userSN1"> - 
+	  <input type="password" size="4" maxlength="7" name="userSN2">
+	 </td>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">생년월일</td>
+	 <td>
+	  <input type="text" size="2" maxlength="4" name="userBirthYear">년
+	  <input type="text" size="1" maxlength="2" name="userBirthMonth">월
+	  <input type="text" size="1" maxlength="2" name="userBirthDay">일
+	  <input type="radio" name="calendar">양력
+	  <input type="radio" name="calendar">음력
+	 </td>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">E-mail</td>
+	 <td><input type="text" size="20" name="userEMAIL"></td>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">우편번호</td>
+	 <td><input type="text" size="4" maxlength="5" name="userZip"></td>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">주소</td>
+	 <td><input type="text" size="50" name="userAddr"></td>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">전화번호</td>
+	 <td>
+	  <input type="text" size="2" maxlength="3" name="userTel1"> - 
+	  <input type="text" size="2" maxlength="4" name="userTel2"> - 
+	  <input type="text" size="2" maxlength="4" name="userTel3">
+	 </td>
+	</tr>
+    <tr>
+	 <td bgcolor="#ccccff" align="center">핸드폰번호</td>
+	 <td>
+	  <select name="iniNumber">
+	   <option value="010">010</option>
+	   <option value="011">011</option>
+	   <option value="016">016</option>
+	   <option value="019">019</option>
+	  </select>
+	   - <input type="text" size="2" maxlength="4" name="userPhone"> - 
+	  <input type="text" size="2" maxlength="4" name="userPhone">
+	 </td>
+	</tr>
+    <tr>
+	 <td colspan="2" align="center" bgcolor="#ff9900">
+	  <input type="submit" value="전송">
+	  <input type="reset" value="리셋">
+	 </td>
+	</tr>
+   </table>
+  </form>
+ </body>
+</html>

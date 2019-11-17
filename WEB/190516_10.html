@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+  <table border="1" width="400">
+   <caption>수강료표</caption>
+   <!-- 시멘틱(의미) 태그 -->
+   <thead>
+    <tr>
+     <th>강사</th>
+     <th>과목</th>
+     <th>강의장</th>
+     <th>수강료</th>
+    </tr>
+   </thead>
+   <!-- body보다 foot먼저 작업 -> 위치는 마지막에 자동으로 -->
+   <tfoot>
+    <tr>
+     <td colspan="4">위 상기 내용은 변동될 수 있습니다</td>
+    </tr>
+   </tfoot>
+   <tbody>
+    <tr>
+     <td rowspan="2">홍길동</td>
+     <td>Java</td>
+     <td rowspan="2">A Class</td>
+     <td>700,000</td>
+    </tr>
+    <tr>
+     <td>JSP</td>
+     <td rowspan="2">800,000</td>
+    </tr>
+    <tr>
+     <td>둘리</td>
+     <td>Oracle</td>
+     <td>B Class</td>
+    </tr>
+   </tbody> 
+  </table>
+ </body>
+</html>
